@@ -1,0 +1,9 @@
+﻿/*Created by Brandon Case*/
+body {
+}
+
+menu {
+    left: 0;
+    height: 100%;
+    position: absolute;
+}
