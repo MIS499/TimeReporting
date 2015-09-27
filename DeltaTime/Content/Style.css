@@ -1,9 +1,15 @@
 ﻿/*Created by Brandon Case*/
 body {
+    color: white;
 }
 
-menu {
+.menu {
     left: 0;
     height: 100%;
     position: absolute;
+}
+
+.MainTable {
+    padding: 0;
+    background-color: #414A4C;
 }
