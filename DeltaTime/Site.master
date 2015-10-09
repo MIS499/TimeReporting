@@ -34,7 +34,7 @@
                             <div class="menusubheader">Timesheets</div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton">9/27/15 - 9/31/15</div>
+                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
                         </div>
                     </div>
                     <%-- Start bottom half of menu table --%>
