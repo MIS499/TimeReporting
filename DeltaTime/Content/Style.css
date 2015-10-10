@@ -88,4 +88,24 @@ body {
 
 .timesheet {
     border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.timesheetdate {
+    border: 1px solid black;
+}
+
+.timesheetproject {
+    border: 1px solid black;
+}
+
+.timesheethours {
+    border: 1px solid black;
+}
+
+.timesheettextarea {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
 }
