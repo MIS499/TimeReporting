@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
-using System;
-using System.Web;
-using System.Web.UI.WebControls;
 
 namespace WebFormsIdentity
 {
@@ -18,6 +21,7 @@ namespace WebFormsIdentity
                     StatusText.Text = string.Format("Hello {0}!!", User.Identity.GetUserName());
                     LoginStatus.Visible = true;
                     LogoutButton.Visible = true;
+                    lnkRegister.Visible = false;
                 }
                 else
                 {

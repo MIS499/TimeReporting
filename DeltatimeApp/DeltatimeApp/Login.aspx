@@ -42,6 +42,12 @@
                </div>
             </div>
          </asp:PlaceHolder>
+          <p></p>
+          <asp:PlaceHolder ID="register" runat="server">
+
+              <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Register.aspx">Click to Register a New User!</asp:HyperLink>
+
+          </asp:PlaceHolder>
       </div>
    </form>
 </body>

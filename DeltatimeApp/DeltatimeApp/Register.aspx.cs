@@ -7,9 +7,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
-using System;
-using System.Linq;
-using System.Web;
+
 
 namespace DeltatimeApp
 {
