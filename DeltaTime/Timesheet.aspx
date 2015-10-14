@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Timesheet.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
     <asp:Table ID="Timesheet" runat="server" CssClass="timesheet">
         <asp:TableHeaderRow runat="server">
             <asp:TableCell runat="server"></asp:TableCell>
@@ -58,6 +56,14 @@
             <asp:TableCell runat="server" CssClass="timesheethours"></asp:TableCell>
             <asp:TableCell runat="server" CssClass="timesheethours"></asp:TableCell>
             <asp:TableHeaderCell runat="server" CssClass="timesheetproject"></asp:TableHeaderCell>
+        </asp:TableRow>
+        <asp:TableRow runat="server">
+            <asp:TableHeaderCell runat="server" CssClass="timesheettotallabel" ColumnSpan="8">Total:</asp:TableHeaderCell>
+            <asp:TableHeaderCell runat="server" CssClass="timesheetproject"></asp:TableHeaderCell>
+        </asp:TableRow>
+        <asp:TableRow runat="server">
+            <asp:TableHeaderCell runat="server" CssClass="timesheetremaininglabel" ColumnSpan="8">Remaining Hours:</asp:TableHeaderCell>
+            <asp:TableHeaderCell runat="server" CssClass="timesheetremaining">25</asp:TableHeaderCell>
         </asp:TableRow>
     </asp:Table>
 </asp:Content>
