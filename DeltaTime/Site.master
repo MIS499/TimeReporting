@@ -17,14 +17,12 @@
 </head>
 <body>
     <form runat="server">
-
         <div class="table">
             <div class="table-row">
                 <div class="logocell">
                     <img src="images/Logo1.png" class="logo-pic" />
                 </div>
-                <div class="table-middletopcell"></div>
-                <div class="table-righttopcell">Username</div>
+                <div class="table-topcell"></div>
             </div>
             <div class="table-row">
                 <div class="menucell">
@@ -36,11 +34,31 @@
                         <div class="table-row">
                             <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
                         </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                        </div>
+                        <div class="menurowseparator"></div>
                     </div>
+                    <hr />
                     <%-- Start bottom half of menu table --%>
                     <div class="menutable">
                         <div class="table-row">
-                            <div class="menusubheader">Settings</div>
+                            <div class="menusubheader"><a href="settings.aspx">Settings</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menusubheader">Change Role</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menusubheader">Log Out</div>
                         </div>
                     </div>
                 </div>
