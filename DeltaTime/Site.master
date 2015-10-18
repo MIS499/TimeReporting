@@ -16,7 +16,7 @@
     <link href="Content/Style.css" rel="stylesheet" />
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" class="masterbodyform" style="min-height: 100%">
         <div class="table">
             <div class="table-row">
                 <div class="logocell">
@@ -70,10 +70,10 @@
                 </div>
             </div>
         </div>
-        <hr />
-        <footer>
-            <p>&copy; <%: DateTime.Now.Year %> - Brandon Casey and Curtis Beiersdorf</p>
-        </footer>
+        <div class="footer">
+            <hr />
+            <p>Copyright &copy; <%: DateTime.Now.Year %> - Delta Time by Brandon Casey and Curtis Beiersdorf</p>
+        </div>
     </form>
 </body>
 </html>

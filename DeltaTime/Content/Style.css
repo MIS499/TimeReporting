@@ -1,23 +1,72 @@
-﻿/*Created by Brandon Casey*/
-
-html {
+﻿html {
     margin: 0;
     border: 0;
     padding: 0;
     color: black;
-    background-color: #A6A6A6;
+    background-color: #f6f6f6;
+    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
     margin: 0;
     border: 0;
     padding: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* unvisited link */
+a:link {
+    color: #3299BB;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #3299BB;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+h5 {
+    margin: 10px;
+}
+
+/* Begin Master CSS style*/
+.masterbodyform {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
 }
 
 .table {
     display: table;
     border-collapse: collapse;
-    background-color: #A6A6A6;
+    background-color: #f6f6f6;
+    min-height: 93%;
 }
 
     .table .table-row {
@@ -28,6 +77,7 @@ body {
         display: table-cell;
         width: 50px;
         height: 50px;
+        background-color: #424242;
     }
 
 .logo-pic {
@@ -38,14 +88,17 @@ body {
 .table .table-topcell {
     display: table-cell;
     width: 100%;
+    background-color: #424242;
 }
 
 .table .menucell {
     display: table-cell;
-    border: 1px solid #F2F2F2;
     height: 100%;
-    background-color: #D9D9D9;
+    background-color: #424242;
     vertical-align: top;
+    color: #4ECDC4;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .table .menutable {
@@ -59,7 +112,6 @@ body {
     display: table-cell;
     text-align: left;
     vertical-align: top;
-    border: 1px solid #F2F2F2;
     font-style: oblique;
     padding-bottom: 10px;
 }
@@ -75,12 +127,14 @@ body {
 
 .menutable .menurowseparator {
     display: table-row;
-    height: 50px;
+    height: 10%;
 }
 
 .table .maincontentcell {
     display: table-cell;
-    border: 1px solid #F2F2F2;
+    padding: 50px;
+    margin: 0;
+    border: 0;
 }
 
 .timesheet {
@@ -120,10 +174,28 @@ body {
     color: lightgrey;
 }
 
-footer {
+.footer {
     display: block;
-    position: absolute;
-    bottom: 5px;
+    /*position: absolute;*/
+    bottom: 1%;
     text-align: center;
     width: 100%;
 }
+/*End Master CSS*/
+
+/*Begin Settings CSS*/
+.SettingsSubHeader {
+    padding: 1px;
+    margin: 0;
+    border: 0;
+}
+/*End Settings CSS*/
+
+/*Begin Password Change CSS*/
+.PasswordTable {
+    padding-bottom: 25px;
+    padding-right: 20px;
+    vertical-align: central;
+    text-align: right;
+}
+/*End Password Change CSS*/
