@@ -66,7 +66,23 @@ public partial class SiteMaster : MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        DateTime current = DateTime.Now;
+        Int32 dayOfWeek = Convert.ToInt32(current.DayOfWeek);
+        DateTime ThisSunday = current.AddDays(-1 * dayOfWeek);
+        DateTime ThisSaturday = current.AddDays(6 - dayOfWeek);
+        DateTime OneWeekSunday = ThisSunday.AddDays(-7);
+        DateTime OneWeekSaturday = ThisSaturday.AddDays(-7);
+        DateTime TwoWeekSunday = ThisSunday.AddDays(-14);
+        DateTime TwoWeekSaturday = ThisSaturday.AddDays(-14);
+        DateTime ThreeWeekSunday = ThisSunday.AddDays(-21);
+        DateTime ThreeWeekSaturday = ThisSaturday.AddDays(-21);
+        DateTime FourWeekSunday = ThisSunday.AddDays(-28);
+        DateTime FourWeekSaturday = ThisSaturday.AddDays(-28);
+        CurrentWeek.Text = ThisSunday.ToString("d") + " - " +ThisSaturday.ToString("d");
+        OneWeekAgo.Text = OneWeekSunday.ToString("d") + " - " + OneWeekSaturday.ToString("d");
+        TwoWeekAgo.Text = TwoWeekSunday.ToString("d") + " - " + TwoWeekSaturday.ToString("d");
+        ThreeWeekAgo.Text = ThreeWeekSunday.ToString("d") + " - " + ThreeWeekSaturday.ToString("d");
+        FourWeekAgo.Text = FourWeekSunday.ToString("d") + " - " + FourWeekSaturday.ToString("d");
     }
 
     protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)

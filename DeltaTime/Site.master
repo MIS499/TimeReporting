@@ -20,7 +20,7 @@
         <div class="table">
             <div class="table-row">
                 <div class="logocell">
-                    <img src="images/Logo1.png" class="logo-pic" />
+                    <img src="images/Logo2.png" class="logo-pic" />
                 </div>
                 <div class="table-topcell"></div>
             </div>
@@ -32,19 +32,22 @@
                             <div class="menusubheader">Timesheets</div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                            <div class="menubutton">
+                                <a href="Timesheet.aspx">
+                                    <asp:Literal runat="server" ID="CurrentWeek" EnableViewState="false" /></a>
+                            </div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="OneWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="TwoWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="ThreeWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx">9/27/15 - 9/31/15</a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="FourWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="menurowseparator"></div>
                     </div>
@@ -53,6 +56,9 @@
                     <div class="menutable">
                         <div class="table-row">
                             <div class="menusubheader"><a href="settings.aspx">Settings</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menusubheader"><a href="timesheets.aspx">Timesheets</a></div>
                         </div>
                         <div class="table-row">
                             <div class="menusubheader">Change Role</div>
