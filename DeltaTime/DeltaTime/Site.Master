@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" Codebehind="Site.master.cs" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> Delta Time</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server" class="masterbodyform" style="min-height: 100%">
+        <div class="table">
+            <div class="table-row">
+                <div class="logocell">
+                    <img src="images/Logo2.png" class="logo-pic" />
+                </div>
+                <div class="table-topcell"></div>
+            </div>
+            <div class="table-row">
+                <div class="menucell">
+                    <%-- Start top half of menu table --%>
+                    <div class="menutable">
+                        <div class="table-row">
+                            <div class="menusubheader">Timesheets</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton">
+                                <a href="Timesheet.aspx">
+                                    <asp:Literal runat="server" ID="CurrentWeek" EnableViewState="false" /></a>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="OneWeekAgo" EnableViewState="false" /></a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="TwoWeekAgo" EnableViewState="false" /></a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="ThreeWeekAgo" EnableViewState="false" /></a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="FourWeekAgo" EnableViewState="false" /></a></div>
+                        </div>
+                        <div class="menurowseparator"></div>
+                    </div>
+                    <hr />
+                    <%-- Start bottom half of menu table --%>
+                    <div class="menutable">
+                        <div class="table-row">
+                            <div class="menusubheader"><a href="settings.aspx">Settings</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menusubheader"><a href="timesheets.aspx">Timesheets</a></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menusubheader">Change Role</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="menusubheader">Log Out</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincontentcell">
+                    <div class="container body-content">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <hr />
+            <p>Copyright &copy; <%: DateTime.Now.Year %> - Delta Time by Brandon Casey and Curtis Beiersdorf</p>
+        </div>
+    </form>
+</body>
+</html>

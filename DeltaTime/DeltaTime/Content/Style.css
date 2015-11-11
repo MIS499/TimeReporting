@@ -1,0 +1,201 @@
+﻿html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: black;
+    background-color: #f6f6f6;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* unvisited link */
+a:link {
+    color: #3299BB;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #3299BB;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+h5 {
+    margin: 10px;
+}
+
+/* Begin Master CSS style*/
+.masterbodyform {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+    min-height: 93%;
+}
+
+    .table .table-row {
+        display: table-row;
+    }
+
+    .table .logocell {
+        display: table-cell;
+        width: 50px;
+        height: 50px;
+        background-color: #424242;
+    }
+
+.logo-pic {
+    width: 200px;
+    height: 75px;
+}
+
+.table .table-topcell {
+    display: table-cell;
+    width: 100%;
+    background-color: #424242;
+}
+
+.table .menucell {
+    display: table-cell;
+    height: 100%;
+    background-color: #424242;
+    vertical-align: top;
+    color: #4ECDC4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.table .menutable {
+    display: table;
+    text-align: left;
+    vertical-align: top;
+    width: 180px;
+}
+
+.menutable .menusubheader {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    font-style: oblique;
+    padding-bottom: 10px;
+}
+
+.menutable .menubutton {
+    display: table-cell;
+    text-align: center;
+    text-indent: each-line 25px;
+    vertical-align: top;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.menutable .menurowseparator {
+    display: table-row;
+    height: 10%;
+}
+
+.table .maincontentcell {
+    display: table-cell;
+    padding: 50px;
+    margin: 0;
+    border: 0;
+}
+
+.timesheet {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.timesheetdate {
+    border: 1px solid black;
+}
+
+.timesheetproject {
+    border: 1px solid black;
+}
+
+.timesheethours {
+    border: 1px solid black;
+}
+
+.timesheettextarea {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+.timesheettotallabel {
+    text-align: right;
+}
+
+.timesheetremaininglabel {
+    text-align: right;
+    color: lightgrey;
+}
+
+.timesheetremaining {
+    color: lightgrey;
+}
+
+.footer {
+    display: block;
+    /*position: absolute;*/
+    bottom: 1%;
+    text-align: center;
+    width: 100%;
+}
+/*End Master CSS*/
+
+/*Begin Settings CSS*/
+.SettingsSubHeader {
+    padding: 1px;
+    margin: 0;
+    border: 0;
+}
+/*End Settings CSS*/
+
+/*Begin Password Change CSS*/
+.PasswordTable {
+    padding-bottom: 25px;
+    padding-right: 20px;
+    vertical-align: central;
+    text-align: right;
+}
+/*End Password Change CSS*/
