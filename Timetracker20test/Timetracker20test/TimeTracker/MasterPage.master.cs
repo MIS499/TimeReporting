@@ -53,6 +53,7 @@ public partial class MasterPage_master : System.Web.UI.MasterPage
         if (!IsPostBack)
         {
             // Set Anti-XSRF token
+
             ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
             ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
         }
