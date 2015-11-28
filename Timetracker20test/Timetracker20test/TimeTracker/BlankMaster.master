@@ -15,10 +15,10 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <footer>
+        <div class="LoginFooter">
             <hr />
             <p>Copyright &copy; <%: DateTime.Now.Year %> - Delta Time by Brandon Casey and Curtis Beiersdorf</p>
-        </footer>
+        </div>
     </form>
 </body>
 </html>

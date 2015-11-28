@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/TimeTracker/BlankMaster.master"
+<%@ Page Title="Login" Language="C#" MasterPageFile="~/TimeTracker/BlankMaster.master"
     Inherits="Login_aspx" Culture="auto" UICulture="auto" CodeBehind="Login.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="maincontent" runat="Server">
