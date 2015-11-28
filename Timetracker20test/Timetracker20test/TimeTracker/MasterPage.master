@@ -7,6 +7,18 @@
     <link href="timetracker.css" rel="stylesheet" type="text/css" />
     <script language="javascript" src="script.js"> </script>
     <link href="Content/Style.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 2px solid #FF0000;
+        }
+        .auto-style2 {
+            width: 266px;
+        }
+        .auto-style3 {
+            width: 321px;
+        }
+    </style>
 </head>
 <form runat="server" class="masterbodyform" style="min-height: 100%">
     <div class="table">
@@ -70,17 +82,26 @@
                         <div class="menusubheader"><a href="timesheets.aspx">Timesheets</a></div>
                     </div>
                     <div class="table-row">
-                        <div class="menusubheader">Change Role</div>
+                        <div class="menusubheader"><a href="User_Edit.aspx">Change Role</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"> <a href="Project_List.aspx">Projects</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"> <a href="User_List.aspx">View Users</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"> <a href="User_Create.aspx">Create a User</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"> <a href="Reports.aspx">Reports</a></div>
                     </div>
                     <div class="table-row">
                         <div class="menusubheader">Log Out</div>
                     </div>
                 </div>
             </div>
-            <div class="maincontentcell">
-                <div class="container body-content">
-                    <asp:contentplaceholder id="MainContent" runat="server">
-                        </asp:contentplaceholder>
+           
                 </div>
             </div>
         </div>

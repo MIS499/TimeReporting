@@ -10,31 +10,4 @@
 
 
 public partial class Project_List_aspx {
-    
-    /// <summary>
-    /// ProjectData control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ObjectDataSource ProjectData;
-    
-    /// <summary>
-    /// ListAllProjects control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.GridView ListAllProjects;
-    
-    /// <summary>
-    /// CreateProject control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Button CreateProject;
 }
