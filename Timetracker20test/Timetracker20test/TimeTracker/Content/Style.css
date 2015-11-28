@@ -218,4 +218,12 @@ h5 {
     display: block;
     margin-bottom: 30px;
 }
+
+.LoginFooter {
+    display: block;
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+    width: 100%;
+}
 /*End Login Page CSS*/

@@ -101,6 +101,13 @@
     <Compile Include="TimeTracker\MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
+    <Compile Include="TimeTracker\password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTracker\password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TimeTracker\Project_Details.aspx.cs">
       <DependentUpon>Project_Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -142,6 +149,13 @@
     </Compile>
     <Compile Include="TimeTracker\Report_Resources_Result.aspx.designer.cs">
       <DependentUpon>Report_Resources_Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTracker\settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTracker\settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="TimeTracker\TimeEntry.aspx.cs">
       <DependentUpon>TimeEntry.aspx</DependentUpon>
@@ -205,6 +219,7 @@
     <Content Include="TimeTracker\images\timesheet_data_bg.gif" />
     <Content Include="TimeTracker\images\time_tracker_logo.gif" />
     <Content Include="TimeTracker\Login.aspx" />
+    <Content Include="TimeTracker\password.aspx" />
     <Content Include="TimeTracker\Project_Details.aspx" />
     <Content Include="TimeTracker\Project_List.aspx" />
     <Content Include="TimeTracker\Report_Project.aspx" />
@@ -212,6 +227,7 @@
     <Content Include="TimeTracker\Report_Resources.aspx" />
     <Content Include="TimeTracker\Report_Resources_Result.aspx" />
     <Content Include="TimeTracker\script.js" />
+    <Content Include="TimeTracker\settings.aspx" />
     <Content Include="TimeTracker\TimeEntry.aspx" />
     <Content Include="TimeTracker\timetracker.css" />
     <Content Include="TimeTracker\User_Create.aspx" />
