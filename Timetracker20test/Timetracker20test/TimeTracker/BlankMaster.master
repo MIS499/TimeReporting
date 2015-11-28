@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <title><%: Page.Title %> - Delta Time</title>
     <asp:ContentPlaceHolder ID="head" runat="server" />
-    <link href="timetracker.css" rel="stylesheet" type="text/css" />
+    <%--<link href="timetracker.css" rel="stylesheet" type="text/css" />--%>
+    <link href="Content/Style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
