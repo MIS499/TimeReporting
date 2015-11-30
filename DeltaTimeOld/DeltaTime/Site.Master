@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" Codebehind="Site.master.cs" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" CodeBehind="Site.master.cs" %>
 
 <!DOCTYPE html>
 
@@ -20,7 +20,7 @@
         <div class="table">
             <div class="table-row">
                 <div class="logocell">
-                    <img src="images/Logo2.png" class="logo-pic" />
+                    <img src="images/DTime.jpg" class="logo-pic" />
                 </div>
                 <div class="table-topcell"></div>
             </div>
@@ -38,16 +38,20 @@
                             </div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="OneWeekAgo" EnableViewState="false" /></a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx">
+                                <asp:Literal runat="server" ID="OneWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="TwoWeekAgo" EnableViewState="false" /></a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx">
+                                <asp:Literal runat="server" ID="TwoWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="ThreeWeekAgo" EnableViewState="false" /></a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx">
+                                <asp:Literal runat="server" ID="ThreeWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="table-row">
-                            <div class="menubutton"><a href="Timesheet.aspx"><asp:Literal runat="server" ID="FourWeekAgo" EnableViewState="false" /></a></div>
+                            <div class="menubutton"><a href="Timesheet.aspx">
+                                <asp:Literal runat="server" ID="FourWeekAgo" EnableViewState="false" /></a></div>
                         </div>
                         <div class="menurowseparator"></div>
                     </div>
