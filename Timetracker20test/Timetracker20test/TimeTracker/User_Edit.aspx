@@ -16,7 +16,7 @@
             </asp:ObjectDataSource>
 
             <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataKeyNames="UserName"
-                DataSourceID="UserData" DefaultMode="Edit" AutoGenerateRows=false AutoGenerateInsertButton=true >
+                DataSourceID="UserData" DefaultMode="Edit" AutoGenerateRows="false" AutoGenerateInsertButton="true" >
                 <Fields>
                     <asp:TemplateField HeaderText="UserName" SortExpression="UserName">
                         <ItemTemplate>
