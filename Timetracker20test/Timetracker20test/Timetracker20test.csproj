@@ -206,6 +206,7 @@
     <Content Include="TimeTracker\images\background_drop_menu.jpg" />
     <Content Include="TimeTracker\images\background_formsection.gif" />
     <Content Include="TimeTracker\images\background_main.jpg" />
+    <Content Include="TimeTracker\images\DeltaTime.png" />
     <Content Include="TimeTracker\images\icon-calendar.gif" />
     <Content Include="TimeTracker\images\icon-cancel.gif" />
     <Content Include="TimeTracker\images\icon-delete.gif" />

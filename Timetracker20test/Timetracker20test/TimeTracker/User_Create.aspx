@@ -1,17 +1,15 @@
 <%@ Page Language="C#" MasterPageFile="~/TimeTracker/MasterPage.master"
-    Inherits="User_Create_aspx" Title="My Company - Time Tracker - Administration - User Creation" Culture="auto" UICulture="auto"  Codebehind="User_Create.aspx.cs" %>
+    Inherits="User_Create_aspx" Title="User Create" Culture="auto" UICulture="auto" CodeBehind="User_Create.aspx.cs" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="maincontent" runat="Server">
-    <div id="adminedit">
+    <div>
+        <h1>Create User</h1>
         <a name="content_start" id="content_start"></a>
         <fieldset>
-            <!-- add H2 here and hide it with css since you can not put h2 inside a legend tag -->
-            <h2 class="none">
-                User Detail</h2>
-            <legend>User Detail</legend>
-            <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" OnFinishButtonClick="Wizard_FinishButton_Click"
-                ContinueDestinationPageUrl="TimeEntry.aspx" OnCreatedUser="CreateUserWizard1_CreatedUser">
+            <asp:createuserwizard id="CreateUserWizard1" runat="server" onfinishbuttonclick="Wizard_FinishButton_Click"
+                continuedestinationpageurl="TimeEntry.aspx" oncreateduser="CreateUserWizard1_CreatedUser">
                 <WizardSteps>
-                    <asp:CreateUserWizardStep runat="server" Title="Sign Up for Your New Account">
+                    <asp:CreateUserWizardStep runat="server" Title=" ">
                     </asp:CreateUserWizardStep>
                     <asp:WizardStep runat="server">
                         <center>
@@ -28,9 +26,9 @@
                     </asp:CompleteWizardStep>
                 </WizardSteps>
                 <TitleTextStyle CssClass="header-lightgray" />
-            </asp:CreateUserWizard>
-            <asp:Label runat="server" ID="noAccessMsg" Visible="false" EnableViewState="false"
-                Text="User can not be created at this time. Please contact your admistratior"></asp:Label>
+            </asp:createuserwizard>
+            <asp:label runat="server" id="noAccessMsg" visible="false" enableviewstate="false"
+                text="User can not be created at this time. Please contact your admistratior"></asp:label>
         </fieldset>
     </div>
 </asp:Content>

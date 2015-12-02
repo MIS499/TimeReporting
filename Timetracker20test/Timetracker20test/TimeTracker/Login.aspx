@@ -6,7 +6,7 @@
         <fieldset>
             <!-- add H2 here and hide it with css since you can not put h2 inside a legend tag -->
             <%--<h2 class="LoginCenter">User Login</h2>--%>
-            <img src="images/Logo2.png" class="login-logo-pic" />
+            <img src="images/DeltaTime.png" class="login-logo-pic" />
             <asp:Login ID="Login1" runat="server">
                 <LayoutTemplate>
                     <table cellpadding="1" cellspacing="0" style="border-collapse: collapse;">
