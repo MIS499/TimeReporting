@@ -300,7 +300,7 @@ input, select, textarea {
 }
 
 .projectlist, .resourcelist {
-    border: 1px solid #00FF00;
+    border: 1px solid #000000;
     margin-bottom: 4px;
     width: 200px;
 }
