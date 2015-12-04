@@ -9,14 +9,12 @@
     <form id="form1" runat="server">
         <div>
             <asp:ObjectDataSource ID="UserData" runat="server" TypeName="System.Web.Security.Membership"
-                SelectMethod="GetUser">
-                <SelectParameters>
-                    <asp:QueryStringParameter QueryStringField="UserId" Type="String" Name="username" />
-                </SelectParameters>
+                SelectMethod="GetUser" OldValuesParameterFormatString="original_{0}">
             </asp:ObjectDataSource>
 
             <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataKeyNames="UserName"
-                DataSourceID="UserData" DefaultMode="Edit" AutoGenerateRows="false" AutoGenerateInsertButton="true" >
+                DataSourceID="UserData" DefaultMode="Edit" AutoGenerateRows="False" AutoGenerateInsertButton="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
+                <EditRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
                 <Fields>
                     <asp:TemplateField HeaderText="UserName" SortExpression="UserName">
                         <ItemTemplate>
@@ -32,6 +30,9 @@
                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                     <asp:CheckBoxField DataField="IsApproved" HeaderText="IsApproved" SortExpression="IsApproved" />
                 </Fields>
+                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
             </asp:DetailsView>
         </div>
     </form>
