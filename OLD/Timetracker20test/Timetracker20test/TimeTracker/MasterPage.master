@@ -1,0 +1,115 @@
+<%@ Master Language="C#" Inherits="MasterPage_master" CodeBehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title><%: Page.Title %> - Delta Time</title>
+    <link href="timetracker.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="script.js"> </script>
+    <link href="Content/Style.css" rel="stylesheet" />
+</head>
+<form runat="server" class="masterbodyform" style="min-height: 100%">
+    <div class="table">
+        <div class="table-row">
+            <div class="logocell">
+                <img src="images/DeltaTime.png" class="logo-pic" />
+            </div>
+            <div class="table-topcell"></div>
+        </div>
+        <div class="table-row">
+            <div class="menucell">
+                <%-- Start top half of menu table --%>
+                <div class="menutable">
+                    <div class="table-row">
+                        <div class="menusubheader">Timesheets</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menubutton">
+                            <a href="Timesheet.aspx">
+                                <asp:literal runat="server" id="CurrentWeek" enableviewstate="false" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menubutton">
+                            <a href="Timesheet.aspx">
+                                <asp:literal runat="server" id="OneWeekAgo" enableviewstate="false" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menubutton">
+                            <a href="Timesheet.aspx">
+                                <asp:literal runat="server" id="TwoWeekAgo" enableviewstate="false" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menubutton">
+                            <a href="Timesheet.aspx">
+                                <asp:literal runat="server" id="ThreeWeekAgo" enableviewstate="false" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menubutton">
+                            <a href="Timesheet.aspx">
+                                <asp:literal runat="server" id="FourWeekAgo" enableviewstate="false" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menurowseparator"></div>
+                </div>
+                <hr />
+                <%-- Start bottom half of menu table --%>
+                <div class="menutable">
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="settings.aspx">Settings</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="timesheets.aspx">Timesheets</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="Project_List.aspx">List All Project</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="User_Create.aspx">Create a New User</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="User_Edit.aspx">Edit a Current User</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="User_List.aspx">List All Current Users</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="Calendar.aspx">View a Calendar</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="Report_Project.aspx">Project Reporting</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader"><a href="Report_Resources.aspx">Resource Reporting</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader">Change Role</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="menusubheader">Log Out</div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontentcell">
+                <div class="container body-content">
+                    <asp:contentplaceholder id="MainContent" runat="server">
+                        </asp:contentplaceholder>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <hr />
+        <p>Copyright &copy; <%: DateTime.Now.Year %> - Delta Time by Brandon Casey and Curtis Beiersdorf</p>
+    </div>
+</form>
+</body>
+</html>
