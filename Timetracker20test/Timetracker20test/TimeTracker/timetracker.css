@@ -240,15 +240,16 @@ form {
 }
 /* define the pop up calendar style */
 #calbg {
-    background: #ABBDD3 url(images/background_calendar.gif) repeat-x;
-    height: 1000px;
+    background: #dth: 80px;
 }
 
-#calcontent {
-    margin: 5px;
-    padding: 5px 4px 9px 4px;
-    border: 1px solid #000000;
-    background: #FFFFFF;
+#year {
+    margin-bottom: 6px;
+    font-size: 9px;
+    width: 50px;
+}
+
+#calcontent table td a:link, #calcontent table td a:vis;
     font-size: 10px;
     text-align: center;
 }

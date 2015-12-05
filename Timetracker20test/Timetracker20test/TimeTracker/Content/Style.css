@@ -195,3 +195,11 @@ h5 {
     width: 60%;
 }
 /*End Project and Resource Report CSS*/
+
+/*Begin Project and Resource Report Page CSS*/
+.ProjectDetailsBottomBar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*End Project and Resource Report CSS*/

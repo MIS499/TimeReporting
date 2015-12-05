@@ -164,6 +164,13 @@
     <Compile Include="TimeTracker\TimeEntry.aspx.designer.cs">
       <DependentUpon>TimeEntry.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TimeTracker\Timesheet.aspx.cs">
+      <DependentUpon>Timesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTracker\Timesheet.aspx.designer.cs">
+      <DependentUpon>Timesheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TimeTracker\User_Create.aspx.cs">
       <DependentUpon>User_Create.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,7 +200,6 @@
       <DependentUpon>TimeTracker.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
-    <Content Include="EULA.txt" />
     <Content Include="Global.asax" />
     <Content Include="MyTemplate.vstemplate" />
     <Content Include="Properties\PublishProfiles\GoDaddy.pubxml.user" />
@@ -230,11 +236,11 @@
     <Content Include="TimeTracker\script.js" />
     <Content Include="TimeTracker\settings.aspx" />
     <Content Include="TimeTracker\TimeEntry.aspx" />
+    <Content Include="TimeTracker\Timesheet.aspx" />
     <Content Include="TimeTracker\timetracker.css" />
     <Content Include="TimeTracker\User_Create.aspx" />
     <Content Include="TimeTracker\User_Edit.aspx" />
     <Content Include="TimeTracker\User_List.aspx" />
-    <Content Include="Welcome.html" />
     <Content Include="__TemplateIcon.ico" />
   </ItemGroup>
   <ItemGroup>
