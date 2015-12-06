@@ -314,7 +314,7 @@ input, select, textarea {
 }
 /* make submit button larger */
 .submit {
-    width: 108px;
+    width: 150px;
 }
 /* define the look of the data tables (using colgroup in the source)
 colcatlist1 and colcatlist1 are generic names since I'm not sure

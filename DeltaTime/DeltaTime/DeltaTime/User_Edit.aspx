@@ -1,22 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="User_test" Codebehind="User_test.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="MasterPage.master" Inherits="User_Edit" CodeBehind="User_Edit.aspx.cs" Title="User Edit" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Untitled Page</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="maincontent" runat="Server">
+    <h1>User Edit</h1>
+    <form id="form1">
         <div>
-            <asp:ObjectDataSource ID="UserData" runat="server" TypeName="System.Web.Security.Membership"
-                SelectMethod="GetUser" OldValuesParameterFormatString="original_{0}">
-            </asp:ObjectDataSource>
+            <asp:objectdatasource id="UserData" runat="server" typename="System.Web.Security.Membership"
+                selectmethod="GetUser" oldvaluesparameterformatstring="original_{0}">
+            </asp:objectdatasource>
 
-            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" DataKeyNames="UserName"
-                DataSourceID="UserData" DefaultMode="Edit" AutoGenerateRows="False" AutoGenerateInsertButton="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
-                <EditRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+            <asp:detailsview id="DetailsView1" runat="server" height="50px" width="400px" datakeynames="UserName"
+                datasourceid="UserData" defaultmode="Edit" autogeneraterows="False" autogenerateinsertbutton="True" borderstyle="None" borderwidth="0" cellpadding="10" gridlines="none">
+                <EditRowStyle ForeColor="Black" />
                 <Fields>
-                    <asp:TemplateField HeaderText="UserName" SortExpression="UserName">
+                    <asp:TemplateField HeaderText="Username" SortExpression="Username">
                         <ItemTemplate>
                             <asp:Label ID="Label1" runat="server" Text='<%# Bind("UserName") %>'></asp:Label>
                         </ItemTemplate>
@@ -28,13 +24,9 @@
                         </InsertItemTemplate>
                     </asp:TemplateField>
                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                    <asp:CheckBoxField DataField="IsApproved" HeaderText="IsApproved" SortExpression="IsApproved" />
+                    <asp:CheckBoxField DataField="IsApproved" HeaderText="Is Approved" SortExpression="Is Approved" />
                 </Fields>
-                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-            </asp:DetailsView>
+            </asp:detailsview>
         </div>
     </form>
-</body>
-</html>
+</asp:Content>

@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DeltaTime\Logout.aspx" />
     <Content Include="packages.config" />
     <Content Include="DeltaTime\BlankMaster.master" />
     <Content Include="DeltaTime\images\DeltaTime.psd" />
@@ -161,6 +162,13 @@
     <Compile Include="DeltaTime\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DeltaTime\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeltaTime\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DeltaTime\MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,11 +260,11 @@
     <Compile Include="DeltaTime\User_List.aspx.designer.cs">
       <DependentUpon>User_List.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DeltaTime\User_test.aspx.cs">
+    <Compile Include="DeltaTime\User_Edit.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DeltaTime\User_test.aspx.designer.cs">
-      <DependentUpon>User_test.aspx.cs</DependentUpon>
+    <Compile Include="DeltaTime\User_Edit.aspx.designer.cs">
+      <DependentUpon>User_Edit.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -91,10 +91,7 @@
                         <div class="menusubheader"><a href="Report_Resources.aspx">Resource Reporting</a></div>
                     </div>
                     <div class="table-row">
-                        <div class="menusubheader">Change Role</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="menusubheader">Log Out</div>
+                        <div class="menusubheader"><a href="Logout.aspx">Log Out</a></div>
                     </div>
                 </div>
             </div>
