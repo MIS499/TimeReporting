@@ -7,6 +7,8 @@
     <link href="timetracker.css" rel="stylesheet" type="text/css" />
     <script language="javascript" src="script.js"> </script>
     <link href="Content/Style.css" rel="stylesheet" />
+    <link runat="server" rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="favicon.ico" type="image/ico" />
 </head>
 <form runat="server" class="masterbodyform" style="min-height: 100%">
     <div class="table">

@@ -8,6 +8,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server" />
     <%--<link href="timetracker.css" rel="stylesheet" type="text/css" />--%>
     <link href="Content/Style.css" rel="stylesheet" />
+    <link runat="server" rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="favicon.ico" type="image/ico" />
 </head>
 <body>
     <form id="form1" runat="server">
