@@ -109,10 +109,8 @@
     <Content Include="DeltaTime\script.js" />
     <Content Include="DeltaTime\settings.aspx" />
     <Content Include="DeltaTime\TimeEntry.aspx" />
-    <Content Include="DeltaTime\Timesheet.aspx" />
     <Content Include="DeltaTime\timetracker.css" />
     <Content Include="DeltaTime\User_Create.aspx" />
-    <Content Include="DeltaTime\User_Edit.aspx" />
     <Content Include="DeltaTime\User_List.aspx" />
     <Content Include="Global.asax" />
     <Content Include="MyTemplate.vstemplate" />
@@ -227,13 +225,6 @@
     <Compile Include="DeltaTime\TimeEntry.aspx.designer.cs">
       <DependentUpon>TimeEntry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DeltaTime\Timesheet.aspx.cs">
-      <DependentUpon>Timesheet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DeltaTime\Timesheet.aspx.designer.cs">
-      <DependentUpon>Timesheet.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DeltaTime\User_Create.aspx.cs">
       <DependentUpon>User_Create.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,12 +238,6 @@
     </Compile>
     <Compile Include="DeltaTime\User_List.aspx.designer.cs">
       <DependentUpon>User_List.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DeltaTime\User_Edit.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DeltaTime\User_Edit.aspx.designer.cs">
-      <DependentUpon>User_Edit.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

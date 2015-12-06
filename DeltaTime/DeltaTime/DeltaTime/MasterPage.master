@@ -69,7 +69,7 @@
                         <div class="menusubheader"><a href="settings.aspx">Settings</a></div>
                     </div>
                     <div class="table-row">
-                        <div class="menusubheader"><a href="timesheets.aspx">Timesheets</a></div>
+                        <div class="menusubheader"><a href="TimeEntry.aspx">Timesheets</a></div>
                     </div>
                     <div class="table-row">
                         <div class="menusubheader"><a href="Project_List.aspx">List All Project</a></div>
