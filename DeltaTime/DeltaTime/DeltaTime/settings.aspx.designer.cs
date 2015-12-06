@@ -10,4 +10,31 @@
 
 
 public partial class Content_settings {
+    
+    /// <summary>
+    /// ProjectAdminSettings control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProjectAdminSettings;
+    
+    /// <summary>
+    /// ProjectManagerSettings control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProjectManagerSettings;
+    
+    /// <summary>
+    /// ConsultantSettings control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl ConsultantSettings;
 }

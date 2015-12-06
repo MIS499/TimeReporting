@@ -1,33 +1,25 @@
 <%@ Page Language="C#" MasterPageFile="MasterPage.master"
-    Inherits="Report_Resources_Result_aspx" Title="Resource Reports" Culture="auto" UICulture="auto" CodeBehind="Report_Resources_Result.aspx.cs" %>
+    Inherits="Report_Resources_Result_aspx" Title="Resource Report" Culture="auto" UICulture="auto" CodeBehind="Report_Resources_Result.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="maincontent" runat="Server">
-    <div id="projectreport">
-        <a name="content_start" id="content_start"></a>
-        <fieldset>
-            <h2 class="none">Resources Report</h2>
-            <legend>Resources Report</legend>
-            <asp:objectdatasource id="UserReportData" runat="server" typename="ASPNET.BusinessLogicLayer.UserTotalDurationReport"
-                selectmethod="GetUserReportsByUserNames">
+    <h1>Resources Report</h1>
+    <asp:objectdatasource id="UserReportData" runat="server" typename="ASPNET.BusinessLogicLayer.UserTotalDurationReport"
+        selectmethod="GetUserReportsByUserNames">
                 <SelectParameters>
                     <asp:SessionParameter Name="userNames" SessionField="SelectedUserNames" Type="String" />
                 </SelectParameters>
             </asp:objectdatasource>
-            <table class="tan-border" cellspacing="11" cellpadding="0" width="100%" border="0"
-                height="526">
-                <tr valign="top">
-                    <td>
-                        <asp:label id="NoData" runat="server" visible="False" cssclass="header-gray">
+    <table class="tan-border" cellspacing="11" cellpadding="0" width="100%" border="0"
+        height="526">
+        <tr valign="top">
+            <td>
+                <asp:label id="NoData" runat="server" visible="False" cssclass="header-gray">
       No Data Retrieved.
                         </asp:label>
-                        <asp:datalist id="UserList" runat="server" width="100%" datasourceid="UserReportData"
-                            onitemcreated="OnListUserTimeEntriesItemCreated">
+                <asp:datalist id="UserList" runat="server" width="100%" datasourceid="UserReportData"
+                    onitemcreated="OnListUserTimeEntriesItemCreated">
                             <HeaderTemplate>
                                 <table cellspacing="0" cellpadding="0" width="100%" border="0">
-                                    <tr>
-                                        <td colspan="3" class="header-gray">
-                                            Resource Report</td>
-                                    </tr>
                                     <tr>
                                         <td colspan="3">
                                             &nbsp;</td>
@@ -116,9 +108,7 @@
                                 </table>
                             </ItemTemplate>
                         </asp:datalist>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-    </div>
+            </td>
+        </tr>
+    </table>
 </asp:Content>

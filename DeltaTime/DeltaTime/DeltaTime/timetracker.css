@@ -114,8 +114,6 @@
     padding: 10px;
     border: 1px solid #000000;
     float: left;
-    background: #DAE1E7 url(images/background_addhours.jpg) repeat-x left top;
-    color: #666666;
     font-family: Tahoma,Verdana,Helvetica,Helvetica-Narrow,sans-serif;
     width: 195px;
     position: relative;
@@ -133,7 +131,6 @@
     padding: 10px;
     border: 1px solid #000000;
     margin-left: 218px;
-    background: #FFFFFF;
     color: #666666;
     font-family: Tahoma,Verdana,Helvetica,Helvetica-Narrow,sans-serif;
 }
@@ -249,9 +246,7 @@ form {
     width: 50px;
 }
 
-#calcontent table td a:link, #calcontent table td a:vis;
-    font-size: 10px;
-    text-align: center;
+#calcontent table td a:link, #calcontent table td a:vis; font-size: 10px; text-align: center;
 }
 
 #month {

@@ -12,60 +12,6 @@
 public partial class MasterPage_master {
     
     /// <summary>
-    /// CurrentWeek control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Literal CurrentWeek;
-    
-    /// <summary>
-    /// OneWeekAgo control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Literal OneWeekAgo;
-    
-    /// <summary>
-    /// TwoWeekAgo control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Literal TwoWeekAgo;
-    
-    /// <summary>
-    /// ThreeWeekAgo control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Literal ThreeWeekAgo;
-    
-    /// <summary>
-    /// FourWeekAgo control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Literal FourWeekAgo;
-    
-    /// <summary>
-    /// UserCreate control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserCreate;
-    
-    /// <summary>
     /// UserList control.
     /// </summary>
     /// <remarks>
@@ -91,6 +37,15 @@ public partial class MasterPage_master {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.HtmlControls.HtmlGenericControl ReportResources;
+    
+    /// <summary>
+    /// UserCreate control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserCreate;
     
     /// <summary>
     /// MainContent control.

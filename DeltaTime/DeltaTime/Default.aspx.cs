@@ -18,6 +18,6 @@ public partial class Default_aspx : System.Web.UI.Page
 
     private void Page_Load(object sender, EventArgs e)
     {
-        Response.Redirect("~/DeltaTime/settings.aspx");
+        Response.Redirect("~/DeltaTime/TimeEntry.aspx");
     }
 }

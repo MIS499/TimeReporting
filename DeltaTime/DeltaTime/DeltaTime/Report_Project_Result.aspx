@@ -2,26 +2,18 @@
     Inherits="Report_Project_Result_aspx" Title="Project Report" Culture="auto" UICulture="auto" CodeBehind="Report_Project_Result.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="maincontent" runat="Server">
-    <div id="projectreport">
-        <a name="content_start" id="content_start"></a>
-        <fieldset>
-            <h2 class="none">Project Report</h2>
-            <legend>Project Report</legend>
-            <asp:label id="NoData" runat="server" cssclass="header-gray" visible="False">
+    <h1>Project Report</h1>
+    <asp:label id="NoData" runat="server" cssclass="header-gray" visible="False">
       No Data Retrieved.
             </asp:label>
-            <asp:objectdatasource id="ProjectReportData" runat="server" typename="ASPNET.BusinessLogicLayer.Project"
-                selectmethod="GetProjectByIds">
+    <asp:objectdatasource id="ProjectReportData" runat="server" typename="ASPNET.BusinessLogicLayer.Project"
+        selectmethod="GetProjectByIds">
                 <SelectParameters>
                     <asp:SessionParameter Name="ProjectIds" SessionField="SelectedProjectIds" Type="String" />
                 </SelectParameters>
             </asp:objectdatasource>
-            <asp:datalist id="ProjectList" repeatcolumns="1" repeatdirection="Vertical" runat="server"
-                datasourceid="projectReportData" onitemcreated="OnProjectListItemCreated">
-                <HeaderStyle CssClass="header-gray" />
-                <HeaderTemplate>
-                    Project Report
-                </HeaderTemplate>
+    <asp:datalist id="ProjectList" repeatcolumns="1" repeatdirection="Vertical" runat="server"
+        datasourceid="projectReportData" onitemcreated="OnProjectListItemCreated">
                 <ItemTemplate>
                     <table border="0" cellpadding="0" cellspacing="0" class="Content" width="100%">
                         <tr>
@@ -32,14 +24,14 @@
                             <td>
                                 <table border="0" cellpadding="0" cellspacing="0" class="Content" width="100%">
                                     <tr>
-                                        <td width="180" class="report-main-header">
-                                            Project Name</td>
-                                        <td width="70" align="right" class="report-main-header">
-                                            Est. Hours</td>
-                                        <td width="100" align="right" class="report-main-header">
-                                            Actual Hours</td>
-                                        <td width="100" align="right" class="report-main-header">
-                                            Est. Completion</td>
+                                        <td width="200" class="report-main-header">
+                                            <h4>Project Name</h4></td>
+                                        <td width="200" align="right" class="report-main-header">
+                                            <h4>Est. Hours</h4></td>
+                                        <td width="200" align="right" class="report-main-header">
+                                            <h4>Actual Hours</h4></td>
+                                        <td width="200" align="right" class="report-main-header">
+                                            <h4>Est. Completion</h4></td>
                                     </tr>
                                     <tr>
                                         <td class="report-text">
@@ -56,6 +48,7 @@
                                         </td>
                                     </tr>
                                 </table>
+                                <hr />
                             </td>
                         </tr>
                         <tr>
@@ -75,8 +68,6 @@
                                     <ItemTemplate>
                                         <table border="0" cellpadding="0" cellspacing="0" class="Content" width="100%">
                                             <tr>
-                                                <td height="12" width="105">
-                                                    <img height="1" src="images/spacer.gif" width="1"></td>
                                                 <td valign="top" width="72" class="report-header">
                                                     Category</td>
                                                 <td valign="top" width="70" align="right" class="report-header">
@@ -85,8 +76,6 @@
                                                     Actual Hours</td>
                                             </tr>
                                             <tr>
-                                                <td height="12" width="105">
-                                                    <img height="1" src="images/spacer.gif" width="1"></td>
                                                 <td valign="top" class="report-text">
                                                     <%# Eval("Abbreviation") %>
                                                 </td>
@@ -96,10 +85,6 @@
                                                 <td valign="top" class="report-text" align="right">
                                                     <%# Eval("ActualDuration") %>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td valign="top" colspan="4">
-                                                    <img height="15" src="images/spacer.gif" width="1"></td>
                                             </tr>
                                             <tr>
                                                 <td valign="top" colspan="2">
@@ -139,18 +124,12 @@
                                                     </asp:DataList>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td height="25" valign="top" colspan="4">
-                                                    <img height="1" src="images/spacer.gif" width="1"></td>
-                                            </tr>
                                         </table>
                                     </ItemTemplate>
                                 </asp:datalist>
-            </td>
+    </td>
                         </tr>
                     </table>
                 </ItemTemplate>
             </asp:DataList>
-        </fieldset>
-    </div>
 </asp:Content>

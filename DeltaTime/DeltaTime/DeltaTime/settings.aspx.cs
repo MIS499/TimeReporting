@@ -9,6 +9,20 @@ public partial class Content_settings : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Page.User.IsInRole("ProjectAdministrator"))
+        {
+            ProjectAdminSettings.Visible = true;
+            ProjectManagerSettings.Visible = true;
+        }
+        else if (Page.User.IsInRole("ProjectManager"))
+        {
+            ProjectManagerSettings.Visible = true;
+            ProjectAdminSettings.Visible = false;
+        }
+        else
+        {
+            ProjectManagerSettings.Visible = false;
+            ProjectAdminSettings.Visible = false;
+        }
     }
 }
