@@ -87,10 +87,17 @@ public partial class MasterPage_master : System.Web.UI.MasterPage
         TwoWeekAgo.Text = TwoWeekSunday.ToString("d") + " - " + TwoWeekSaturday.ToString("d");
         ThreeWeekAgo.Text = ThreeWeekSunday.ToString("d") + " - " + ThreeWeekSaturday.ToString("d");
         FourWeekAgo.Text = FourWeekSunday.ToString("d") + " - " + FourWeekSaturday.ToString("d");
+        if (Page.User.IsInRole("Consultant"))
+        {
+            UserCreate.Visible = false;
+            UserList.Visible = false;
+            ReportProject.Visible = false;
+            ReportResources.Visible = false;
+        }
+        if (Page.User.IsInRole("ProjectManager"))
+        {
+            UserCreate.Visible = false;
+            UserList.Visible = false;
+        }
     }
-
-    // protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
-    //{
-    //    Context.GetOwinContext().Authentication.SignOut();
-    //}
 }

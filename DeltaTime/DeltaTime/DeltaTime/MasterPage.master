@@ -74,22 +74,19 @@
                     <div class="table-row">
                         <div class="menusubheader"><a href="Project_List.aspx">List All Project</a></div>
                     </div>
-                    <div class="table-row">
+                    <div class="table-row" id="UserCreate" runat="server">
                         <div class="menusubheader"><a href="User_Create.aspx">Create a New User</a></div>
                     </div>
                     <div class="table-row">
                         <div class="menusubheader"><a href="User_Edit.aspx">Edit a Current User</a></div>
                     </div>
-                    <div class="table-row">
+                    <div class="table-row" id="UserList" runat="server">
                         <div class="menusubheader"><a href="User_List.aspx">List All Current Users</a></div>
                     </div>
-                    <div class="table-row">
-                        <div class="menusubheader"><a href="Calendar.aspx">View a Calendar</a></div>
-                    </div>
-                    <div class="table-row">
+                    <div class="table-row" id="ReportProject" runat="server">
                         <div class="menusubheader"><a href="Report_Project.aspx">Project Reporting</a></div>
                     </div>
-                    <div class="table-row">
+                    <div class="table-row" id="ReportResources" runat="server">
                         <div class="menusubheader"><a href="Report_Resources.aspx">Resource Reporting</a></div>
                     </div>
                     <div class="table-row">

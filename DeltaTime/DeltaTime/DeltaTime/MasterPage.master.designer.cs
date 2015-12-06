@@ -57,6 +57,42 @@ public partial class MasterPage_master {
     protected global::System.Web.UI.WebControls.Literal FourWeekAgo;
     
     /// <summary>
+    /// UserCreate control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserCreate;
+    
+    /// <summary>
+    /// UserList control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserList;
+    
+    /// <summary>
+    /// ReportProject control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl ReportProject;
+    
+    /// <summary>
+    /// ReportResources control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl ReportResources;
+    
+    /// <summary>
     /// MainContent control.
     /// </summary>
     /// <remarks>
