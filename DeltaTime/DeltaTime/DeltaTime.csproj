@@ -66,8 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DeltaTime\favicon.ico" />
     <Content Include="DeltaTime\Logout.aspx" />
-    <Content Include="favicon.ico" />
     <Content Include="packages.config" />
     <Content Include="DeltaTime\BlankMaster.master" />
     <Content Include="DeltaTime\MasterPage.master" />
