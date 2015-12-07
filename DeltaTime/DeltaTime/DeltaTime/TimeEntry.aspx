@@ -33,7 +33,7 @@
                 </asp:comparevalidator>
             <br />
             Hours<br />
-            <asp:textbox id="Hours" runat="server" columns="5" cssclass="hours"></asp:textbox>
+            <asp:textbox id="Hours" runat="server" columns="5" cssclass="hours" Font-Size="Medium"></asp:textbox>
             <asp:requiredfieldvalidator id="Requiredfieldvalidator1" runat="server" errormessage="Hours is a required value."
                 controltovalidate="Hours" display="Dynamic" validationgroup="newEntry"></asp:requiredfieldvalidator>
             <asp:comparevalidator id="CompareValidator1" runat="server" errormessage="Hours must be a decimal value."
@@ -91,7 +91,6 @@
                         <Columns>
                         <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly=true />
                             <asp:BoundField DataField="CategoryName" HeaderText="CategoryName" />
-                            <asp:BoundField DataField="Description" HeaderText="Description" />
                             <asp:BoundField DataField="Duration" HeaderText="Duration" />
                             <asp:BoundField DataField="ReportedDate" HeaderText="ReportedDate" DataFormatString="{0:d}" />
                             <asp:CommandField ShowEditButton="True" HeaderText="Edit" ButtonType="Image" EditImageUrl="images/icon-edit.gif"
